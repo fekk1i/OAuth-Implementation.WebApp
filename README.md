@@ -1,14 +1,19 @@
 This project consists of a web shopping app that integrates with the OAuth server for authentication and authorization.
 
 Prerequisites
+
 Python 3.x
+
 pip package manager
+
 Installation
+
 Clone the repository: git clone https://github.com/fekk1i/Loginwebapp cd <repository_directory>
 
 Install the dependencies for the web app: cd pip install -r requirements.txt
 
-Usage
+Usage:
+
 Start the Web app: cd python app.py
 
 Open your web browser and visit http://localhost:8000 to access the web shopping app.
