@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container authorize">
+        <h1 class="authorize-title">Authorization Page</h1>
+        <p class="authorize-message">Welcome, {{ username }}!</p>
+        <p>Please review the requested permissions:</p>
+        <ul class="authorize-scopes">
+            {% for scope in requested_scopes %}
+                <li>{{ scope }}</li>
+            {% endfor %}
+        </ul>
+        <form class="authorize-form" action="{{ url_for('callback') }}" method="POST">
+            <input type="hidden" name="code" value="{{ authorization_code }}">
+            <button type="submit">Authorize</button>
+        </form>
+    </div>
+</body>
+</html>

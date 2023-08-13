@@ -1,0 +1,179 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Lookup-specific styles */
+.lookup-title {
+    text-align: center;
+    color: #3366cc;
+    margin-top: 0;
+}
+
+.lookup-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.lookup-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.lookup-result-client-id,
+.lookup-result-secret-id {
+    color: #ff6600;
+}
+
+
+/* authorize.html */
+.authorize-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.authorize-message {
+    color: #1f2937;
+}
+
+.authorize-scopes {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* callback.html */
+.callback-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.callback-message {
+    color: #1f2937;
+}
+
+.callback-access-token {
+    font-weight: bold;
+}
+
+/* error.html */
+.error-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ef4444;
+}
+
+.error-message {
+    color: #ef4444;
+}
+
+/* login.html */
+.login-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login-form p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form a {
+    margin-left: 10px;
+}
+
+/* lookup.html */
+.lookup-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.lookup-form p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lookup-result {
+    margin-top: 20px;
+}
+
+/* register.html */
+.register-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.register-form p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register-form a {
+    margin-left: 10px;
+}
+
+/* success.html */
+.success-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.success-client-id {
+    font-weight: bold;
+}
+
+.success-secret-id {
+    font-weight: bold;
+}
+
+.success-note {
+    color: #1f2937;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.success-integration {
+    color: #1f2937;
+}
