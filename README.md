@@ -1,16 +1,32 @@
-# OAuth-Implementation.WebApp
+This project consists of a web shopping app that integrates with the OAuth server for authentication and authorization.
 
-OAuth is an open-standard authorization protocol or framework that provides applications
-the ability to “secure designated access.” For example, you can tell Facebook that it’s OK
-for Spotify to access your profile or post updates to your timeline without having to give
-Spotify your Facebook password. This minimizes risk in a major way: In the event, Spotify
-suffers a breach, your Facebook password remains safe.
+Prerequisites
+Python 3.x
+pip package manager
+Installation
+Clone the repository: git clone https://github.com/fekk1i/Loginwebapp cd <repository_directory>
 
-OAuth doesn’t share password data but instead uses authorization tokens to prove an
-identity between consumers and service providers. OAuth is an authentication protocol that
-allows you to approve one application interacting with another on your behalf without
-giving away your password. Further information can be found in the following links:
+Install the dependencies for the web app: cd pip install -r requirements.txt
 
-• https://oauth.net/2/
+Usage
+Start the Web app: cd python app.py
 
-• https://auth0.com/intro-to-iam/what-is-oauth-2
+Open your web browser and visit http://localhost:8000 to access the web shopping app.
+
+Configuration
+OAuth Server Configuration
+The OAuth server can be configured by modifying the following variables in app.py:
+
+app.config['SESSION_COOKIE_SECURE']: Set to True to enable secure session cookies.
+app.config['SQLALCHEMY_DATABASE_URI']: Set the URI for the SQLite database file.
+app.config['SECRET_KEY']: Set a secure secret key for session management.
+ALIELFEKKI_CLIENT_ID: Set the client ID for the web shopping app.
+ALIELFEKKI_CLIENT_SECRET: Set the client secret for the web shopping app.
+ALIELFEKKI_REDIRECT_URI: Set the redirect URI for the web shopping app.
+Web Shopping App Configuration
+The web shopping app can be configured by modifying the following variables in app.py:
+
+app.secret_key: Set a secure secret key for session management.
+ALIELFEKKI_CLIENT_ID: Set the client ID for the OAuth server.
+ALIELFEKKI_CLIENT_SECRET: Set the client secret for the OAuth server.
+ALIELFEKKI_REDIRECT_URI: Set the redirect URI for the OAuth server.
